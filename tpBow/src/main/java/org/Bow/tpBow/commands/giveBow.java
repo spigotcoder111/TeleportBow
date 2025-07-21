@@ -52,7 +52,7 @@ public class giveBow implements CommandExecutor {
 
                 }else{
 
-                    p.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("&eУ вас нет прав")));
+                    p.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("no-bow-other-permission")));
                 }
 
             }else if(args.length > 1){
