@@ -22,10 +22,10 @@ public class hintEvent implements Listener {
 
         if(e.getEntity().getShooter() instanceof Player p){
 
-            if(p.getInventory().getItemInMainHand().getItemMeta().getDisplayName().equalsIgnoreCase(ChatColor.translateAlternateColorCodes('&',plugin.getConfig().getString("bow-name"))));
-            Location l = e.getEntity().getLocation();
-            p.teleport(l);
-
+            if(p.getInventory().getItemInMainHand().getItemMeta().getDisplayName().equalsIgnoreCase(ChatColor.translateAlternateColorCodes('&',plugin.getConfig().getString("bow-name")))) {
+                Location l = e.getEntity().getLocation();
+                p.teleport(l);
+            }
         }
     }
 
