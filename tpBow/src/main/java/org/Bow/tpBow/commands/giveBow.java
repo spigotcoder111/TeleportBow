@@ -31,6 +31,9 @@ public class giveBow implements CommandExecutor {
                     p.getInventory().addItem(bow);
 
 
+                }else{
+
+                    p.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("no-bow.get-permission")));
                 }
 
             }else if(args.length == 1){
@@ -47,6 +50,9 @@ public class giveBow implements CommandExecutor {
                         p.sendMessage(ChatColor.YELLOW + "лук был выдан" + target.getDisplayName());
                     }
 
+                }else{
+
+                    p.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.getConfig().getString("&eУ вас нет прав")));
                 }
 
             }else if(args.length > 1){
